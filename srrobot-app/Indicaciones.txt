@@ -1,2 +1,5 @@
 correr con :
+npx expo start 
+y luego haces esto:
 npx expo start --tunnel --clear
+te fijas q diga expo go si dice development build, aplassta la s

@@ -3,6 +3,7 @@ import { useNavigation } from '@react-navigation/native';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Alert, Image, Platform, ScrollView, Switch, Text, TouchableOpacity, View } from 'react-native';
+import { LineChart } from 'react-native-chart-kit';
 import { Gesture, GestureDetector, GestureHandlerRootView } from 'react-native-gesture-handler';
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -104,6 +105,21 @@ const Home = () => {
     })
     .minDistance(50);
 
+  // Preparar datos ordenados por tiempo para los gráficos
+  const sortedData = [...data].sort((a, b) => new Date(a.marcaTiempo) - new Date(b.marcaTiempo));
+  const labels = sortedData.map((item) => new Date(item.marcaTiempo).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
+
+  // Configuración común para los gráficos (tema oscuro)
+  const chartConfig = {
+    backgroundGradientFrom: '#374151',
+    backgroundGradientTo: '#1F2937',
+    color: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
+    labelColor: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
+    strokeWidth: 2,
+    barPercentage: 0.5,
+    useShadowColorFromDataset: false,
+  };
+
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaView style={{ flex: 1, backgroundColor: '#1F2937', position: 'relative' }}>
@@ -175,7 +191,7 @@ const Home = () => {
             </TouchableOpacity>
           </GestureDetector>
 
-          {/* Métricas de seguridad */}
+          {/* Métricas de seguridad (2 arriba, 2 abajo con mejor tamaño y espacio) */}
           <Text style={{
             color: '#FFFFFF',
             fontSize: wp(4.2),
@@ -186,46 +202,48 @@ const Home = () => {
           </Text>
           <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between' }}>
             <View style={{
-              width: wp(45),
+              width: wp(48),
               backgroundColor: '#374151',
-              padding: wp(3.5),
+              padding: wp(4),
               borderRadius: wp(2),
-              marginBottom: hp(1.5),
+              marginBottom: hp(2),
             }}>
-              <Text style={{ color: '#9CA3AF', fontSize: wp(3.2) }}>Horas de Monitoreo</Text>
-              <Text style={{ color: '#FFFFFF', fontSize: wp(5.5), fontWeight: 'bold' }}>{horasTotal} h</Text>
+              <Text style={{ color: '#9CA3AF', fontSize: wp(3.5) }}>Horas de Monitoreo</Text>
+              <Text style={{ color: '#FFFFFF', fontSize: wp(6), fontWeight: 'bold' }}>{horasTotal} h</Text>
             </View>
             <View style={{
-              width: wp(45),
+              width: wp(48),
               backgroundColor: '#374151',
-              padding: wp(3.5),
+              padding: wp(4),
               borderRadius: wp(2),
-              marginBottom: hp(1.5),
+              marginBottom: hp(2),
             }}>
-              <Text style={{ color: '#9CA3AF', fontSize: wp(3.2) }}>Eventos Totales</Text>
-              <Text style={{ color: '#FFFFFF', fontSize: wp(5.5), fontWeight: 'bold' }}>{eventosTotales}</Text>
+              <Text style={{ color: '#9CA3AF', fontSize: wp(3.5) }}>Eventos Totales</Text>
+              <Text style={{ color: '#FFFFFF', fontSize: wp(6), fontWeight: 'bold' }}>{eventosTotales}</Text>
             </View>
             <View style={{
-              width: wp(45),
+              width: wp(48),
               backgroundColor: '#374151',
-              padding: wp(3.5),
+              padding: wp(4),
               borderRadius: wp(2),
+              marginBottom: hp(2),
             }}>
-              <Text style={{ color: '#9CA3AF', fontSize: wp(3.2) }}>Eventos Críticos</Text>
-              <Text style={{ color: '#FFFFFF', fontSize: wp(5.5), fontWeight: 'bold' }}>{eventosCriticos}</Text>
+              <Text style={{ color: '#9CA3AF', fontSize: wp(3.5) }}>Eventos Críticos</Text>
+              <Text style={{ color: '#FFFFFF', fontSize: wp(6), fontWeight: 'bold' }}>{eventosCriticos}</Text>
             </View>
             <View style={{
-              width: wp(45),
+              width: wp(48),
               backgroundColor: '#374151',
-              padding: wp(3.5),
+              padding: wp(4),
               borderRadius: wp(2),
+              marginBottom: hp(2),
             }}>
-              <Text style={{ color: '#9CA3AF', fontSize: wp(3.2) }}>Tiempo Respuesta</Text>
-              <Text style={{ color: '#FFFFFF', fontSize: wp(5.5), fontWeight: 'bold' }}>{tiempoRespuesta} s</Text>
+              <Text style={{ color: '#9CA3AF', fontSize: wp(3.5) }}>Tiempo Respuesta</Text>
+              <Text style={{ color: '#FFFFFF', fontSize: wp(6), fontWeight: 'bold' }}>{tiempoRespuesta} s</Text>
             </View>
           </View>
 
-          {/* Actividad en tiempo real */}
+          {/* Actividad en tiempo real (reemplazado por dashboard con gráficos de línea) */}
           <Text style={{
             color: '#FFFFFF',
             fontSize: wp(4.2),
@@ -236,22 +254,67 @@ const Home = () => {
             ACTIVIDAD EN TIEMPO REAL
           </Text>
           <ScrollView style={{ flex: 1, marginBottom: hp(1.5) }}>
-            {data.map((item) => (
-              <View key={item.id} style={{
-                backgroundColor: '#374151',
-                padding: wp(3.5),
-                borderRadius: wp(2),
-                marginBottom: hp(1),
-              }}>
-                <Text style={{ color: '#FFFFFF', fontSize: wp(3.8) }}>Evento ID: {item.id}</Text>
-                <Text style={{ color: '#9CA3AF', fontSize: wp(3.2) }}>Horas: {item.horasMonitoreadas}</Text>
-                <Text style={{ color: '#9CA3AF', fontSize: wp(3.2) }}>Eventos Totales: {item.eventosTotales}</Text>
-                <Text style={{ color: '#9CA3AF', fontSize: wp(3.2) }}>Eventos Críticos: {item.eventosCriticos}</Text>
-                <Text style={{ color: '#9CA3AF', fontSize: wp(3.2) }}>Movimiento: {item.movimiento}</Text>
-                <Text style={{ color: '#9CA3AF', fontSize: wp(3.2) }}>Promedio: {item.promedio}%</Text>
-                <Text style={{ color: '#9CA3AF', fontSize: wp(3.2) }}>Fecha: {new Date(item.marcaTiempo).toLocaleString()}</Text>
+            {sortedData.length > 0 ? (
+              <View>
+                {/* Gráfico para Horas Monitoreadas */}
+                <Text style={{ color: '#FFFFFF', fontSize: wp(3.5), marginBottom: hp(1) }}>Horas Monitoreadas over Time</Text>
+                <LineChart
+                  data={{
+                    labels,
+                    datasets: [{ data: sortedData.map((item) => item.horasMonitoreadas), color: (opacity = 1) => `rgba(250, 204, 21, ${opacity})` }],
+                  }}
+                  width={wp(90)}
+                  height={hp(25)}
+                  chartConfig={chartConfig}
+                  bezier
+                  style={{ marginBottom: hp(2), borderRadius: wp(2) }}
+                />
+
+                {/* Gráfico para Eventos Totales */}
+                <Text style={{ color: '#FFFFFF', fontSize: wp(3.5), marginBottom: hp(1) }}>Eventos Totales over Time</Text>
+                <LineChart
+                  data={{
+                    labels,
+                    datasets: [{ data: sortedData.map((item) => item.eventosTotales), color: (opacity = 1) => `rgba(34, 197, 94, ${opacity})` }],
+                  }}
+                  width={wp(90)}
+                  height={hp(25)}
+                  chartConfig={chartConfig}
+                  bezier
+                  style={{ marginBottom: hp(2), borderRadius: wp(2) }}
+                />
+
+                {/* Gráfico para Eventos Críticos */}
+                <Text style={{ color: '#FFFFFF', fontSize: wp(3.5), marginBottom: hp(1) }}>Eventos Críticos over Time</Text>
+                <LineChart
+                  data={{
+                    labels,
+                    datasets: [{ data: sortedData.map((item) => item.eventosCriticos || 0), color: (opacity = 1) => `rgba(239, 68, 68, ${opacity})` }],
+                  }}
+                  width={wp(90)}
+                  height={hp(25)}
+                  chartConfig={chartConfig}
+                  bezier
+                  style={{ marginBottom: hp(2), borderRadius: wp(2) }}
+                />
+
+                {/* Gráfico para Promedio */}
+                <Text style={{ color: '#FFFFFF', fontSize: wp(3.5), marginBottom: hp(1) }}>Promedio (%) over Time</Text>
+                <LineChart
+                  data={{
+                    labels,
+                    datasets: [{ data: sortedData.map((item) => item.promedio || 0), color: (opacity = 1) => `rgba(96, 165, 250, ${opacity})` }],
+                  }}
+                  width={wp(90)}
+                  height={hp(25)}
+                  chartConfig={chartConfig}
+                  bezier
+                  style={{ marginBottom: hp(2), borderRadius: wp(2) }}
+                />
               </View>
-            ))}
+            ) : (
+              <Text style={{ color: '#9CA3AF', fontSize: wp(3.5), textAlign: 'center' }}>No hay datos disponibles</Text>
+            )}
           </ScrollView>
         </View>
 

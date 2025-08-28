@@ -1,0 +1,612 @@
+[{
+  "_id": {
+    "$oid": "68a7d34b184f6294984edd81"
+  },
+  "id": 1,
+  "idUsuario": {
+    "$oid": "68a7d220184f6294984edd7d"
+  },
+  "horasMonitoreadas": 5,
+  "eventosTotales": 10,
+  "eventosCriticos": 2,
+  "movimiento": "sí",
+  "promedio": 20,
+  "marcaTiempo": {
+    "$date": "2025-08-22T02:17:47.566Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7d351184f6294984edd84"
+  },
+  "id": 2,
+  "idUsuario": {
+    "$oid": "68a7d220184f6294984edd7d"
+  },
+  "horasMonitoreadas": 5,
+  "eventosTotales": 10,
+  "eventosCriticos": 2,
+  "movimiento": "sí",
+  "promedio": 20,
+  "marcaTiempo": {
+    "$date": "2025-08-22T02:17:53.777Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7d353184f6294984edd87"
+  },
+  "id": 3,
+  "idUsuario": {
+    "$oid": "68a7d220184f6294984edd7d"
+  },
+  "horasMonitoreadas": 5,
+  "eventosTotales": 10,
+  "eventosCriticos": 2,
+  "movimiento": "sí",
+  "promedio": 20,
+  "marcaTiempo": {
+    "$date": "2025-08-22T02:17:55.169Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7d354184f6294984edd8a"
+  },
+  "id": 4,
+  "idUsuario": {
+    "$oid": "68a7d220184f6294984edd7d"
+  },
+  "horasMonitoreadas": 5,
+  "eventosTotales": 10,
+  "eventosCriticos": 2,
+  "movimiento": "sí",
+  "promedio": 20,
+  "marcaTiempo": {
+    "$date": "2025-08-22T02:17:56.733Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e245c13377a52ae3b78f"
+  },
+  "id": 5,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 19,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:21:41.700Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e250c13377a52ae3b792"
+  },
+  "id": 6,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 20,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:21:52.763Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e25bc13377a52ae3b795"
+  },
+  "id": 7,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 13,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:22:03.989Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e266c13377a52ae3b798"
+  },
+  "id": 8,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 6,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:22:14.825Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e272c13377a52ae3b79b"
+  },
+  "id": 9,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 2,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:22:26.249Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e27ec13377a52ae3b79e"
+  },
+  "id": 10,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 13,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:22:38.452Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e289c13377a52ae3b7a1"
+  },
+  "id": 11,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 17,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:22:49.315Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e306c13377a52ae3b7a4"
+  },
+  "id": 12,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 6,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:24:54.719Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e311c13377a52ae3b7a7"
+  },
+  "id": 13,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 2,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:25:05.604Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e31cc13377a52ae3b7aa"
+  },
+  "id": 14,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 10,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:25:16.707Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e327c13377a52ae3b7ad"
+  },
+  "id": 15,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 9,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:25:27.626Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e332c13377a52ae3b7b0"
+  },
+  "id": 16,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 17,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:25:38.791Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e33dc13377a52ae3b7b3"
+  },
+  "id": 17,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 17,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:25:49.545Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e349c13377a52ae3b7b6"
+  },
+  "id": 18,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 15,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:26:01.543Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e355c13377a52ae3b7b9"
+  },
+  "id": 19,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 5,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:26:13.793Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e361c13377a52ae3b7bc"
+  },
+  "id": 20,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 16,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:26:25.409Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e36dc13377a52ae3b7bf"
+  },
+  "id": 21,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 23,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:26:37.698Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e379c13377a52ae3b7c2"
+  },
+  "id": 22,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 11,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:26:49.363Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e384c13377a52ae3b7c5"
+  },
+  "id": 23,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 6,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:27:00.645Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e3b8c13377a52ae3b7c8"
+  },
+  "id": 24,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 9,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:27:52.462Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e3c4c13377a52ae3b7cb"
+  },
+  "id": 25,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 20,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:28:04.327Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e3d0c13377a52ae3b7ce"
+  },
+  "id": 26,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 12,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:28:16.278Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e3dcc13377a52ae3b7d1"
+  },
+  "id": 27,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 3,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:28:28.116Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e3e7c13377a52ae3b7d4"
+  },
+  "id": 28,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 20,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:28:39.735Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e3f3c13377a52ae3b7d7"
+  },
+  "id": 29,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 22,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:28:51.376Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e3ffc13377a52ae3b7da"
+  },
+  "id": 30,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 8,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:29:03.908Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e40bc13377a52ae3b7dd"
+  },
+  "id": 31,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 13,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:29:15.653Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e42fc13377a52ae3b7e0"
+  },
+  "id": 32,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 1,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:29:51.024Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e439c13377a52ae3b7e3"
+  },
+  "id": 33,
+  "idUsuario": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "horasMonitoreadas": 9,
+  "eventosTotales": 0,
+  "eventosCriticos": 0,
+  "movimiento": "no",
+  "promedio": 0,
+  "marcaTiempo": {
+    "$date": "2025-08-22T03:30:01.966Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b0cada4e667b43c6f36fa5"
+  },
+  "id": 34,
+  "idUsuario": {
+    "$oid": "68a7d220184f6294984edd7d"
+  },
+  "horasMonitoreadas": 5,
+  "eventosTotales": 20,
+  "eventosCriticos": 3,
+  "movimiento": "sí",
+  "promedio": 15,
+  "marcaTiempo": {
+    "$date": "2025-08-28T21:32:10.987Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "68a7d220184f6294984edd7d"
+  },
+  "nombreCompleto": "Diego",
+  "correo": "diego@gmail.com",
+  "nombreUsuario": "diegom",
+  "contrasena": "$2b$10$UUkfT0tdCFWQ6pV/uaPzX.AlNe5cajpq8HJf8aoXJakyNpHxZceN2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a7e1acc13377a52ae3b789"
+  },
+  "nombreCompleto": "Gabriel Pérez",
+  "correo": "gabriel@example.com",
+  "nombreUsuario": "gabriel123",
+  "contrasena": "$2b$10$xZdRP0M/4D3YB.SgpUEZxeP849pi8qb54fchL7TjA1L9D/xUO47gm",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a88362fb1187a1ae74e624"
+  },
+  "nombreCompleto": "Leonardo Tum tum Sabur",
+  "correo": "leonardo@gmail.com",
+  "nombreUsuario": "leonardo",
+  "contrasena": "$2b$10$cuJplhfISR9gvcdqPRgck.V1AP7mlTP9vMcfwp0Wym5xJVon5tuMS",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a8989307114486873944d0"
+  },
+  "nombreCompleto": "Jhan ",
+  "correo": "rolandojhan@gmail.com",
+  "nombreUsuario": "rolan25",
+  "contrasena": "$2b$10$/9n5DPmk/hu7YwgEGTQP1eQFhU9Fr0b2A.CPNQjPXaegdBrfQpKQ.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b0c60b4e667b43c6f36f98"
+  },
+  "nombreCompleto": "tucher",
+  "correo": "tswe@gmail.com",
+  "nombreUsuario": "tswer",
+  "contrasena": "$2b$10$uFDPOGskpg9yemQgeDPoRu6GnaFS4BMDLTIQxAZsvE7Ww.0.1ACdC",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b0d3294e667b43c6f36fc8"
+  },
+  "nombreCompleto": "Lucero",
+  "correo": "lucero@gmail.com",
+  "nombreUsuario": "lucero78",
+  "contrasena": "$2b$10$.hxco9VFhpmhizC9UZap1OPJEJ5X1vmPZHZSNhImDxMx4ih8Kw9/m",
+  "__v": 0
+}]

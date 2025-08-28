@@ -1,0 +1,9 @@
+Este archivo crea una API REST y WebSocket para manejar usuarios y datos de monitoreo.
+La API se conecta a MongoDB, usa JWT para autenticación y Socket.IO para datos en tiempo real.
+Para ejecutarlo, asegúrate de instalar las dependencias:
+npm init -y
+npm install express mongoose dotenv bcryptjs jsonwebtoken socket.io
+si clonas primero haces:
+npm install
+luego para proabar:
+node Server.js
